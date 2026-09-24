@@ -20,13 +20,5 @@ from myapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('view_history_temperature/', views.view_history_temperature, name='view_history_temperature'),
-    path('add_temperature/', views.add_temperature, name='add_temperature'),
-    path('show_temperature/', views.show_temperature, name='show_temperature'),
-    path('show_temperature2/', views.show_temperature2, name='show_temperature2'),
-
-    #########
-    #WEB API
-    path('show_temperature_API/', views.show_temperature_API, name='show_temperature_API'),
-    path('add_temperature_API/', views.add_temperature_API,name='add_temperature_API'),
+    path('b/', views.b, name='b')
 ]

@@ -4,6 +4,9 @@ from django.forms.models import model_to_dict
 from django.http import HttpResponse
 
 # Create your views here.
+def b(request):
+    return HttpResponse("This is the b view.")
+
 def view_history_temperature(request):
     history = temperature_db.objects.all().order_by('-myid')
     #return HttpResponse("test")
